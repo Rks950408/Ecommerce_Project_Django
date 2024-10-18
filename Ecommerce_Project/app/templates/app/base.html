@@ -50,11 +50,11 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link text-white" href="#">About Us</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link text-white">contact Us</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -62,11 +62,38 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="profileDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Aarya
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+           <li><a class="dropdown-item" href="#">Profile</a></li>
+           <li><a class="dropdown-item" href="#">Orders</a></li>
+           <li><a class="dropdown-item" href="#">Change Password</a></li>
+           <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </li>
+       <li class="nav-item max-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Cart</a>
+        </li>
+        <li class="nav-item max-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Wishlist</a>
+        </li>
+        <li class="nav-item max-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Login</a>
+        </li>
+        <li class="nav-item max-2">
+          <a class="nav-link text-white" aria-current="page" href="#">Registration</a>
+        </li>
+    </ul>
   </div>
 </nav>
 
+      {% block banner_slider %}{% endblock banner_slider %}
+      {% block information %}{% endblock information %}
       {% block main-content %}{% endblock main-content%}
-      <footer>
+      <footer class="container-fluid bg-success text-center p-2 mt-5">
         copyright :2024 || Developed By :Rahul Developer
       </footer>
     <script
